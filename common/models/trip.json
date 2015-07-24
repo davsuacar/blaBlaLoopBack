@@ -1,0 +1,25 @@
+{
+  "name": "Trip",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "car": {
+      "type": "Car",
+      "required": true
+    },
+    "passengers": {
+      "type": [
+        "Passenger"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
